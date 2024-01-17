@@ -1,7 +1,7 @@
 export const Hero = () => {
   return (
-    <div className="w-full flex  py-24 px-20 gap-12 bg-red-200">
-      <div className="px-8 flex gap-12 ">
+    <div className="bigContainer">
+      <div className="smallContainer flex gap-12 ">
         <div className=" w-2/3 text-base flex flex-col font-normal text-gray-600	gap-2">
           <h1 className="text-6xl font-bold text-gray-900  ">
             Hi, I’m Sagar 👋
@@ -145,9 +145,14 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-[300px] h-[400px] bg-black h-50 ">
-          <div></div>
-          <div></div>
+        <div className="w-[300px] h-[400px] bg-black-100 h-50 ">
+          <div>
+            <div>
+              src/images/Pic.jpg
+              <img src="url./src/images/Pic.jpg" alt="" />
+            </div>
+            <div></div>
+          </div>
         </div>
       </div>
     </div>

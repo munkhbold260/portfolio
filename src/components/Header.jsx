@@ -2,7 +2,7 @@ export const Header = () => {
   return (
     <div className="px-20 py-4 ">
       <div className="flex items-center  justify-between px-8 	bg-neutral-200;">
-        <div>
+        <div className="items-center">
           <p>
             <svg
               width="92"
