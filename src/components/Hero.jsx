@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <div className="w-full flex  py-24 px-20 gap-12">
+    <div className="w-full flex  py-24 px-20 gap-12 bg-red-200">
       <div className="px-8 flex gap-12 ">
         <div className=" w-2/3 text-base flex flex-col font-normal text-gray-600	gap-2">
           <h1 className="text-6xl font-bold text-gray-900  ">
@@ -145,7 +145,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/3 h-96 bg-black h-50 ">
+        <div className="w-[300px] h-[400px] bg-black h-50 ">
           <div></div>
           <div></div>
         </div>
