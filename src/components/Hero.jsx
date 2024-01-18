@@ -33,7 +33,7 @@ export const Hero = () => {
         </div>
         <div className="w-[400px] h-[360px]relative">
           <img
-            className="shadow-[10px_10px_red,_-10px_10px_red] sm:shadow-[10px_10px_black] "
+            className="shadow-[10px_10px_red,_-10px_10px_red] sm:shadow-[40px_40px_black] "
             src="Pic.jpg"
             alt=""
           />

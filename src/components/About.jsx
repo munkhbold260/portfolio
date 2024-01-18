@@ -41,14 +41,18 @@ export const About = () => {
                 you can follow me on GitHub.
               </p>
               <p>Finally, some quick bits about me.</p>
-              <div className="flex self-stretch">
-                <div>
-                  <p>B.E. in Computer Engineering</p>
+              <div className="flex gap-[10px]">
+                <div className="flex flex-col gap-[10px]">
+                  <p className="w-[287px] h-[24px]">
+                    {" "}
+                    B.E. in Computer Engineering
+                  </p>
+                  <p className="w-[287px] h-[24px]">Full time freelancer</p>
                 </div>
-                <div></div> <p>B.E. in Computer Engineering</p>
-                <p>Full time freelancer</p>
-                <p>Avid learner</p>
-                <p>Aspiring indie hacker</p>
+                <div>
+                  <p className="w-[287px] h-[24px]">Avid learner</p>
+                  <p className="w-[287px] h-[24px]">Aspiring indie hacker</p>
+                </div>
               </div>
               <p>
                 One last thing, I'm available for freelance work, so feel free
