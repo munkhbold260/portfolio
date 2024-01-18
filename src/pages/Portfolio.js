@@ -4,7 +4,7 @@ import { About } from "@/components/About";
 
 export const Portfolio = () => {
   return (
-    <div>
+    <div className="flex flex-col m-auto">
       <Header />
       <Hero />
       <About />
