@@ -1,8 +1,8 @@
 export const About = () => {
   return (
-    <div className="bigContainer">
-      <div className="smallContainer flex flex-col items-center ">
-        <img className="mb-12	" src="about1.svg" alt="" />
+    <div className="bigContainer bg-gray-50">
+      <div className="smallContainer flex flex-col items-center gap-12 ">
+        <p className="tagStyle">About me</p>
         <div className="flex gap-12">
           <div className="w-1/2 ">
             <img src="aboutPic.jpg" alt="" />

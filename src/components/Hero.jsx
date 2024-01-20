@@ -1,7 +1,7 @@
 export const Hero = () => {
   return (
     <div className="bigContainer">
-      <div className="smallContainer flex gap-12 ">
+      <div className=" flex gap-12 px-8 ">
         <div className=" w-2/3 text-base flex flex-col font-normal text-gray-600	gap-2">
           <h1 className="text-6xl font-bold text-gray-900  ">
             Hi, I’m Sagar 👋

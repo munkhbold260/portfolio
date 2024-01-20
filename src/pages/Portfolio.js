@@ -3,6 +3,9 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Skills } from "@/components/Skills";
 import { Experience } from "@/components/Experience";
+import { Work } from "@/components/Work";
+import { GetInTouch } from "@/components/GetInTouch";
+import { Footer } from "@/components/Footer";
 
 export const Portfolio = () => {
   return (
@@ -12,6 +15,9 @@ export const Portfolio = () => {
       <About />
       <Skills />
       <Experience />
+      <Work />
+      <GetInTouch />
+      <Footer />
     </div>
   );
 };

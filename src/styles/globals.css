@@ -30,6 +30,13 @@
     @apply max-w-[1440px] h-fit py-24 px-20;
   }
   .smallContainer {
-    @apply px-8;
+    @apply flex flex-col max-w-[1440px] m-auto gap-12 px-8;
+  }
+
+  .tagStyle {
+    @apply bg-gray-200 rounded-xl px-5 py-1 m-auto;
+  }
+  .tagContainer {
+    @apply m-auto flex flex-col gap-4;
   }
 }
