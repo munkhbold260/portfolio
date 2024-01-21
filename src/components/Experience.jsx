@@ -31,11 +31,11 @@ export const Experience = () => {
 
   const elements = experienceCards.map((a) => {
     return (
-      <div className="flex gap-12 justify-between max-w-[896px] m-auto">
+      <div className="flex flex-col sm:flex gap-12 justify-between max-w-[896px] m-auto">
         <div>
-          <div>{a.images}</div>
+          <div className="order-1 sm: ">{a.images}</div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className=" order-3 sm:`flex flex-col gap-4">
           <h1>{a.h1}</h1>
           <ul>
             <li>{a.p1}</li>
@@ -45,7 +45,7 @@ export const Experience = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="order-2 sm:">
           <p>{a.dates}</p>
         </div>
       </div>
@@ -61,7 +61,7 @@ export const Experience = () => {
             Here is a quick summary of my most recent experiences:
           </p>
         </div>
-        <div className="flex flex-col gap-12">{elements}</div>
+        <div className=" sm:flex flex-col gap-12">{elements}</div>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 export const Hero = () => {
   return (
-    <div className="bigContainer">
-      <div className=" flex gap-12 px-8 ">
-        <div className=" w-2/3 text-base flex flex-col font-normal text-gray-600	gap-2">
+    <div className=" sm:bigContainer">
+      <div className=" flex flex-col  items-center sm:flex gap-12 px-8 ">
+        <div className=" order-2 sm:w-2/3 text-base flex flex-col font-normal text-gray-600	gap-2">
           <h1 className="text-6xl font-bold text-gray-900  ">
             Hi, I’m Sagar 👋
           </h1>
@@ -31,7 +31,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-[400px] h-[360px]relative">
+        <div className="items-center order-1 sm:order-2 w-[400px] h-[360px]relative">
           <img
             className="shadow-[10px_10px_red,_-10px_10px_red] sm:shadow-[40px_40px_black] "
             src="Pic.jpg"
