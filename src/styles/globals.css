@@ -34,7 +34,7 @@
   }
 
   .tagStyle {
-    @apply bg-gray-200 rounded-xl px-5 py-1 m-auto;
+    @apply bg-gray-200 rounded-xl w-fit px-5 py-1 m-auto;
   }
   .tagContainer {
     @apply m-auto flex flex-col gap-4;

@@ -4,16 +4,16 @@ import { LightThemeIcon } from "./icons/LightThemeIcon";
 
 export const Header = () => {
   const { theme, setTheme } = useTheme();
-  const divClassName = `hidden m-auto flex px-4 py-4 sm:block ${
+  const themeCHanger = `hidden px-4 py-4 sm:block ${
     theme == "light" ? "bg-white" : "bg-black"
   }`;
   return (
-    <div>
-      <div className={divClassName}>
+    <div className="hidden sm:block">
+      <div className="flex justify-between px-28 py-4 ">
         <div className="items-center">
           <img src="SS.svg" alt="" />
         </div>
-        <div className="hidden items-center gap-[24px] sm:block">
+        <div className="flex gap-6 items-center text-base">
           <p>About</p>
           <p>Work</p>
           <p>Testimonials</p>

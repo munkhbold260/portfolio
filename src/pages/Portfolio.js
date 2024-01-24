@@ -14,21 +14,20 @@ export const Portfolio = () => {
   const { theme } = useTheme();
   const [size, setSize] = useState("");
 
-  const divClassName = theme == "light" ? "" : "bg-black";
+  const themeChanger = theme == "light" ? "" : "bg-gray-950";
   return (
-    <div className={divClassName}>
+    <div className={themeChanger}>
       <div>
         <TestHeader />
         <Header />
       </div>
-
       <Hero />
       <About />
-      {/* <Skills /> */}
-      {/* <Experience /> */}
-      {/* <Work /> */}
-      {/* <GetInTouch /> */}
-      {/* <Footer /> */}
+      <Skills />
+      <Experience />
+      <Work />
+      <GetInTouch />
+      <Footer />
     </div>
   );
 };

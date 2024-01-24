@@ -1,3 +1,4 @@
+import { useTheme } from "./context/ThemeChangeContext";
 import { UpWork } from "./icons/Upwork";
 
 export const Experience = () => {
@@ -33,37 +34,39 @@ export const Experience = () => {
 
   const elements = experienceCards.map((a) => {
     return (
-      <div className="flex flex-col sm:flex gap-12 justify-between m-auto">
-        <div>
-          <div className=" ">{a.images}</div>
-        </div>
-        <div className=" order-3 flex flex-col gap-4">
-          <h1>{a.h1}</h1>
-          <ul>
-            <li>{a.p1}</li>
-            <li>{a.p2}</li>
-            <li>{a.p3}</li>
-            <li>{a.p4}</li>
-          </ul>
-        </div>
-
-        <div className="order-2 ">
+      <div className=" m-auto px-8 py-8 flex flex-col rounded-xl drop-shadow-lg bg-white">
+        <div className="flex flex-col gap-4">
+          <div>{a.images}</div>
           <p>{a.dates}</p>
+          <h1 className="text-gray-900 text-lg font-semibold  leading-7">
+            {a.h1}
+          </h1>
+          <div>
+            <p>{a.p1}</p>
+            <p>{a.p2}</p>
+            <p>{a.p3}</p>
+            <p>{a.p4}</p>
+          </div>
         </div>
       </div>
     );
   });
 
+  const { theme } = useTheme();
+  const themeChanger = theme == "light" ? "" : "bg-gray-900";
   return (
-    <div className="bigContainer bg-gray-50 m-auto">
-      <div className="smallContainer  ">
-        <div className="tagContainer">
-          <p className="tagStyle">Experience</p>
-          <p className="text-xl m-auto">
-            Here is a quick summary of my most recent experiences:
-          </p>
+    <div className={themeChanger}>
+      {" "}
+      <div className="px-4 py-16 m-auto">
+        <div className="flex flex-col gap-6">
+          <div className="tagContainer text-center">
+            <p className="tagStyle">Experience</p>
+            <p className="text-xl m-auto">
+              Here is a quick summary of my most recent experiences:
+            </p>
+          </div>
+          <div className="flex flex-col gap-6">{elements}</div>
         </div>
-        <div className=" sm:flex flex-col gap-12">{elements}</div>
       </div>
     </div>
   );

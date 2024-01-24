@@ -63,36 +63,39 @@ export const Work = () => {
   ];
 
   const element = workCard.map((a) => {
-    // const element1 = workCard.map((b) => {
-    //   return (
-    //     <p className="bg-gray-200 rounded-xl px-5 py-1 m-auto max-w-fit">
-    //       {b.tag}
-    //     </p>
-    //   );
-    // });
     return (
-      <div className="flex">
-        <div className="p-12 w-1/2">{a.images}</div>
-        <div className="p-12 w-1/2 flex flex-col gap-6">
+      <div className="">
+        <div className="px-8 py-8 bg-gray-50">{a.images}</div>
+        <div className="px-8 py-8 flex flex-col gap-6 bg-white drop-shadow-lg rounded-xl">
           <h2>{a.h2}</h2>
           <p className="">{a.p}</p>
           {/* <div>{a.tags}</div> */}
+          <div>
+            {" "}
+            <p className="tagStyle inline-block">React</p>
+            <p className="tagStyle inline-block">React</p>
+            <p className="tagStyle inline-block">React</p>
+            <p className="tagStyle inline-block">React</p>
+            <p className="tagStyle inline-block">React</p>
+            <p className="tagStyle inline-block">React</p>
+            <p className="tagStyle inline-block">React</p>
+          </div>
+
           {a.icon}
         </div>
       </div>
     );
   });
+
   return (
-    <div className="bigContainer">
-      <div className="smallContainer flex flex-col max-w-[1440px] gap-12">
-        <div className="tagContainer">
-          <p className="tagStyle">Work</p>
-          <p className="text-xl m-auto">
-            Some of the noteworthy projects I have built:
-          </p>
-        </div>
-        <div>{element}</div>
+    <div className="px-4 py-16">
+      <div className="tagContainer text-center">
+        <p className="tagStyle">Work</p>
+        <p className="text-xl m-auto">
+          Some of the noteworthy projects I have built:
+        </p>
       </div>
+      <div className="flex flex-col gap-6">{element}</div>
     </div>
   );
 };

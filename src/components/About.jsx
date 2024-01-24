@@ -1,26 +1,34 @@
 import { useTheme } from "./context/ThemeChangeContext";
+import { GoDotFill } from "react-icons/go";
 
 export const About = () => {
   const { theme } = useTheme();
-  const divClassName = theme == "light" ? "bg-gray-200" : "bg-black";
+  const themeChanger = theme == "light" ? "bg-gray-50" : "bg-gray-900";
   return (
-    <div className={divClassName}>
-      <div className="smallContainer flex flex-col items-center gap-12 ">
+    <div className={themeChanger}>
+      <div className=" flex flex-col px-4 py-16 gap-6">
         <p className="tagStyle">About me</p>
-        <div className="flex gap-12">
-          <div className="w-1/2 ">
-            <img src="aboutPic.jpg" alt="" />
+        <div className="flex flex-col gap-12">
+          <div className="m-auto">
+            <img
+              className="shadow-[10px_10px_#E5E7EB,_-10px_10px_#E5E7EB] sm:shadow-[40px_40px_#E5E7EB] "
+              src="aboutPic.jpg"
+              alt=""
+            />
           </div>
-          <div className="w-1/2">
+          <div className="">
             <div className="flex flex-col gap-6">
-              <h1 className="">Curious about me? Here you have it:</h1>
+              <h1 className=" text-gray-900 text-2xl font-bold ">
+                Curious about me? Here you have it:
+              </h1>
               <p>
-                I'm a passionate, self-proclaimed designer who specializes in
-                full stack development (React.js & Node.js). I am very
-                enthusiastic about bringing the technical and visual aspects of
-                digital products to life. User experience, pixel perfect design,
-                and writing clear, readable, highly performant code matters to
-                me.
+                I'm a passionate,
+                <span className="underline">self-proclaimed designer</span> who
+                specializes in full stack development (React.js & Node.js). I am
+                very enthusiastic about bringing the technical and visual
+                aspects of digital products to life. User experience, pixel
+                perfect design, and writing clear, readable, highly performant
+                code matters to me.
               </p>
             </div>
             <div className="flex flex-col gap-4">
@@ -41,21 +49,23 @@ export const About = () => {
                 When I'm not in full-on developer mode, you can find me hovering
                 around on twitter or on indie hacker, witnessing the journey of
                 early startups or enjoying some free time. You can follow me on
-                Twitter where I share tech-related bites and build in public, or
-                you can follow me on GitHub.
+                <span className="underline">Twitter</span> where I share
+                tech-related bites and build in public, or you can follow me on
+                <span className="underline">GitHub.</span>
               </p>
               <p>Finally, some quick bits about me.</p>
               <div className="flex gap-[10px]">
-                <div className="flex flex-col gap-[10px]">
-                  <p className="w-[287px] h-[24px]">
-                    {" "}
-                    B.E. in Computer Engineering
-                  </p>
-                  <p className="w-[287px] h-[24px]">Full time freelancer</p>
+                <div className="w-1/2 flex flex-col gap-[10px]">
+                  <div className="">
+                    <p className="flex-wrap flex">
+                      B.E. in Computer Engineering
+                    </p>
+                  </div>
+                  <p className="">Full time freelancer</p>
                 </div>
                 <div>
-                  <p className="w-[287px] h-[24px]">Avid learner</p>
-                  <p className="w-[287px] h-[24px]">Aspiring indie hacker</p>
+                  <p className="">Avid learner</p>
+                  <p className="">Aspiring indie hacker</p>
                 </div>
               </div>
               <p>

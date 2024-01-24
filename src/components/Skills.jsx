@@ -17,33 +17,28 @@ export const Skills = () => {
     { images: <ExpressIcon /> },
     { images: <NestIcon /> },
     { images: <SocketIcon /> },
-
-    { images: <React />, qq: 123 },
-    { images: <React />, qq: 123 },
-    { images: <React />, qq: 123 },
-    { images: <React />, qq: 123 },
-    { images: <React />, qq: 123 },
-    { images: <React />, qq: 123 },
-    { images: <React />, qq: 123 },
-    { images: <React />, qq: 123 },
+    { images: <React /> },
+    { images: <React /> },
+    { images: <React /> },
+    { images: <React /> },
+    { images: <React /> },
+    { images: <React /> },
+    { images: <React /> },
+    { images: <React /> },
   ];
   const elements1 = skillsIcon1.map((a) => {
     return <>{a.images}</>;
   });
 
   return (
-    <div className="bigContainer m-auto">
-      <div className="smallContainer gap-12 flex flex-col max-w-[1440px] m-auto">
-        <div className="tagContainer">
-          <p className="tagStyle">Skills</p>
-          <p className="m-auto">
-            The skills, tools and technologies I am really good at:
-          </p>
-        </div>
-        <div className="flex flex-wrap sm:flex justify-between">
-          {elements1}
-        </div>
+    <div className="flex flex-col gap-6 px-4 py-16">
+      <div className="flex flex-col gap-4">
+        <p className="tagStyle">Skills</p>
+        <p className="m-auto  text-center">
+          The skills, tools and technologies I am really good at:
+        </p>
       </div>
+      <div className="flex gap-4 justify-between flex-wrap">{elements1}</div>
     </div>
   );
 };
