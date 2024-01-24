@@ -56,13 +56,16 @@ export const Experience = () => {
   const themeChanger = theme == "light" ? "" : "bg-gray-900";
   return (
     <div className={themeChanger}>
-      {" "}
       <div className="px-4 py-16 m-auto">
         <div className="flex flex-col gap-6">
           <div className="tagContainer text-center">
             <p className="tagStyle">Experience</p>
             <p className="text-xl m-auto">
-              Here is a quick summary of my most recent experiences:
+              Here is a quick summary of my most recent experiences: Here is a
+              quick summary of my most recent experiences: Here is a quick
+              summary of my most recent experiences: Here is a quick summary of
+              my most recent experiences: Here is a quick summary of my most
+              recent experiences:
             </p>
           </div>
           <div className="flex flex-col gap-6">{elements}</div>
