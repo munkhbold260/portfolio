@@ -1,6 +1,10 @@
+import { useTheme } from "./context/ThemeChangeContext";
+
 export const About = () => {
+  const { theme } = useTheme();
+  const divClassName = theme == "light" ? "bg-gray-200" : "bg-black";
   return (
-    <div className="bigContainer bg-gray-50">
+    <div className={divClassName}>
       <div className="smallContainer flex flex-col items-center gap-12 ">
         <p className="tagStyle">About me</p>
         <div className="flex gap-12">

@@ -1,6 +1,10 @@
+import { useTheme } from "./context/ThemeChangeContext";
+
 export const Hero = () => {
+  const { theme } = useTheme();
+  const divClassName = theme == "light" ? "" : "bg-black";
   return (
-    <div className=" sm:bigContainer">
+    <div className={divClassName}>
       <div className=" flex flex-col  items-center sm:flex gap-12 px-8 ">
         <div className=" order-2 sm:w-2/3 text-base flex flex-col font-normal text-gray-600	gap-2">
           <h1 className="text-6xl font-bold text-gray-900  ">

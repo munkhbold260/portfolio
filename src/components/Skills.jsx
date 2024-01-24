@@ -32,7 +32,7 @@ export const Skills = () => {
   });
 
   return (
-    <div className="bigContainer">
+    <div className="bigContainer m-auto">
       <div className="smallContainer gap-12 flex flex-col max-w-[1440px] m-auto">
         <div className="tagContainer">
           <p className="tagStyle">Skills</p>
