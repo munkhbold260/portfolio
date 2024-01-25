@@ -25,9 +25,6 @@ export const Experience = () => {
       images: <UpWork />,
       h1: "Full Stack Developer",
       p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      p2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      p3: "Sed quis justo ac magna.",
-      p4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       dates: "Dec 2015 - May 2017",
     },
   ];
@@ -41,7 +38,7 @@ export const Experience = () => {
           <h1 className="text-gray-900 text-lg font-semibold  leading-7">
             {a.h1}
           </h1>
-          <div>
+          <div className="w-[279px] xl:w-[900px]">
             <p>{a.p1}</p>
             <p>{a.p2}</p>
             <p>{a.p3}</p>

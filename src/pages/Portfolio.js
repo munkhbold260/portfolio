@@ -8,26 +8,22 @@ import { GetInTouch } from "@/components/GetInTouch";
 import { Footer } from "@/components/Footer";
 import { useTheme } from "@/components/context/ThemeChangeContext";
 import { TestHeader } from "@/components/TestHeader";
-import { useState } from "react";
 
 export const Portfolio = () => {
   const { theme } = useTheme();
-  const [size, setSize] = useState("");
 
   const themeChanger = theme == "light" ? "" : "bg-gray-950";
   return (
     <div className={themeChanger}>
-      <div>
-        <TestHeader />
-        <Header />
-      </div>
-      <Hero />
+      <TestHeader />
+      <Header />
+      {/* <Hero /> */}
       <About />
-      <Skills />
-      <Experience />
-      <Work />
-      <GetInTouch />
-      <Footer />
+      {/* <Skills /> */}
+      {/* <Experience /> */}
+      {/* <Work /> */}
+      {/* <GetInTouch /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

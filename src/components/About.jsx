@@ -1,14 +1,14 @@
 import { useTheme } from "./context/ThemeChangeContext";
-import { GoDotFill } from "react-icons/go";
+// import { GoDotFill } from "react-icons/go";
 
 export const About = () => {
   const { theme } = useTheme();
   const themeChanger = theme == "light" ? "bg-gray-50" : "bg-gray-900";
   return (
     <div className={themeChanger}>
-      <div className=" flex flex-col px-4 py-16 gap-6">
+      <div className=" flex flex-col px-4 py-16 gap-6 xl:bigContainer xl:gap-12">
         <p className="tagStyle">About me</p>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-12 xl:flex-row">
           <div className="m-auto">
             <img
               className="shadow-[10px_10px_#E5E7EB,_-10px_10px_#E5E7EB] sm:shadow-[40px_40px_#E5E7EB] "

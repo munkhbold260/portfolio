@@ -8,8 +8,8 @@ export const Header = () => {
     theme == "light" ? "bg-white" : "bg-black"
   }`;
   return (
-    <div className="hidden sm:block">
-      <div className="flex justify-between px-28 py-4 ">
+    <div className="hidden sm:block xl:max-w-[1440px] xl:m-auto xl:px-[112px] xl:py-4">
+      <div className="flex justify-between ">
         <div className="items-center">
           <img src="SS.svg" alt="" />
         </div>

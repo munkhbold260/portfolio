@@ -26,17 +26,13 @@
 }
 
 @layer components {
-  .bigContainer {
-    @apply max-w-[1440px] h-fit py-24 px-20;
-  }
-  .smallContainer {
-    @apply flex flex-col max-w-[1440px] m-auto gap-12 px-8;
-  }
-
   .tagStyle {
     @apply bg-gray-200 rounded-xl w-fit px-5 py-1 m-auto;
   }
   .tagContainer {
     @apply m-auto flex flex-col gap-4;
+  }
+  .bigContainer {
+    @apply xl:max-w-[1440px] xl:px-[112px] xl:py-[96px] xl:m-auto;
   }
 }
